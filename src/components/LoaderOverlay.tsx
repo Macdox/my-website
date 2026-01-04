@@ -73,6 +73,6 @@ const barVariant = {
   visible: {
     opacity: 0,
     scaleX: 0,
-    transition: { duration: 1.2, ease: [0.42, 0, 0.58, 1] },
+    transition: { duration: 1.2, ease: [0.42, 0, 0.58, 1] as const },
   },
 };
