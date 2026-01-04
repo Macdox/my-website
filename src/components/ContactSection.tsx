@@ -85,7 +85,7 @@ export default function ContactSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Let's work together.
+          Let&apos;s work together.
         </motion.h2>
 
         <motion.p
@@ -95,7 +95,7 @@ export default function ContactSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          I'm available for freelance work.
+          I&apos;m available for freelance work.
         </motion.p>
 
         {/* Animated Button */}
