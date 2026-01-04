@@ -24,7 +24,7 @@ export default function ProjectTransition() {
 
   // Transform values for zoom effect - optimized for smoother performance
   const scale = useTransform(scrollYProgress, [0, 0.6, 1], [0.5, 3, 8]);
-  const opacity = useTransform(scrollYProgress, [0, 0.4, 0.8, 1], [0, 1, 1, 0]);
+  const starOpacity = useTransform(scrollYProgress, [0, 0.7], [0.8, 0]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 0.9], [0, 1, 1, 0]);
   const backgroundColor = useTransform(
     scrollYProgress, 
@@ -32,6 +32,7 @@ export default function ProjectTransition() {
     ["rgb(0, 0, 0)", "rgb(0, 0, 0)", "rgb(255, 255, 255)"]
   );
   const whiteOverlay = useTransform(scrollYProgress, [0.7, 1], [0, 1]);
+  const cornerOpacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
 
   return (
     <motion.div 
@@ -57,7 +58,7 @@ export default function ProjectTransition() {
             style={{
               left: `${star.left}%`,
               top: `${star.top}%`,
-              opacity: useTransform(scrollYProgress, [0, 0.7], [0.8, 0]),
+              opacity: starOpacity,
               willChange: 'opacity, transform'
             }}
             animate={{
@@ -89,7 +90,7 @@ export default function ProjectTransition() {
             willChange: 'transform'
           }}
         >
-          "Design is not just what it looks like — design is how it works"
+          &ldquo;Design is not just what it looks like — design is how it works&rdquo;
         </motion.h1>
       </motion.div>
 
@@ -97,7 +98,7 @@ export default function ProjectTransition() {
       <motion.div
         className="absolute top-8 left-8 w-16 h-16 border-2 border-gray-600 rounded-full"
         style={{
-          opacity: useTransform(scrollYProgress, [0, 0.7], [1, 0]),
+          opacity: cornerOpacity,
           willChange: 'transform, opacity'
         }}
         animate={{

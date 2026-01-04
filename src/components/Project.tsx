@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 // Wave animation component for the heading
 const WaveText = ({ text, className }: { text: string; className: string }) => {
@@ -8,7 +8,7 @@ const WaveText = ({ text, className }: { text: string; className: string }) => {
   
   const container = {
     hidden: { opacity: 0 },
-    visible: (i = 1) => ({
+    visible: () => ({
       opacity: 1,
       transition: { staggerChildren: 0.1, delayChildren: 0.5 }
     })
