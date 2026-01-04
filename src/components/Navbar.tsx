@@ -44,7 +44,7 @@ export default function Navbar() {
     <>
       <nav className="fixed top-0 left-0 right-0 w-full sm:px-[72px] px-[5%] flex items-center justify-between py-4 z-50 bg-transparent">
         <Link href="/" className="">
-          <img src="/logo.svg" alt="Logo" className="h-16" />
+          <img src="/Logo.svg" alt="Logo" className="h-16" />
         </Link>
         
         {/* Desktop Menu */}
