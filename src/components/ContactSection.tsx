@@ -180,7 +180,7 @@ export default function ContactSection() {
           transition={{ duration: 0.8, delay: 1 }}
           viewport={{ once: true }}
         >
-          © MADDOX 2025
+          © MADDOX {new Date().getFullYear()}
         </motion.p>
       </motion.div>
 
