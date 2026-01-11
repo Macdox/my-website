@@ -123,7 +123,7 @@ export default function Project() {
       tech: ["NextJs", "Node.js", "Express", "MongoDB"],
       type: "Full Stack",
       category: "Event Management , registration",
-      website: "http://pratistha.sakec.ac.in/"
+      website: "http://pratishtha.sakec.ac.in/"
     },
     {
       id: 2,
